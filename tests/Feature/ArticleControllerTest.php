@@ -10,13 +10,14 @@ use Tests\TestCase;
 
 class ArticleControllerTest extends TestCase
 {
+    //
     use RefreshDatabase;
 
     public function testIndex()
     {
         $response = $this->get(route('articles.index'));
 
-        $response->assertStatus(400)
+        $response->assertStatus(200)
                  ->assertViewIs('articles.index');
     }
 
