@@ -10,6 +10,7 @@ use Tests\TestCase;
 
 class ArticleControllerTest extends TestCase
 {
+    //
     use RefreshDatabase;
 
     public function testIndex()
