@@ -83,7 +83,7 @@ jobs:
       - aws-cli/install
       - run:
           name: upload artifacts to s3
-          command: aws se cp laravel-ci.zip s3://${AWS_S3_BUCKET_NAME}
+          command: aws s3 cp laravel-ci.zip s3://${AWS_S3_BUCKET_NAME}
       - run:
           name: deploy to prod
           command: |
