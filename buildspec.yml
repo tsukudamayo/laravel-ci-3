@@ -8,6 +8,6 @@ phases:
   build:
     commands:
       - npm run prod
-  artifacts:
-    files:
-      - './**/*'
+artifacts:
+  files:
+    - './**/*'
