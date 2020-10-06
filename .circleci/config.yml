@@ -79,7 +79,7 @@ jobs:
       - run: npm run prod
       - run:
           name: archive artifacts
-          command: zip -ryq larave-ci.zip
+          command: zip -ryq larave-ci.zip .
       - aws-cli/install
       - run:
           name: upload artifacts to s3
